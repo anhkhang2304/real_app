@@ -1,5 +1,5 @@
 class Admin::RoomsController < Admin::AdminController
   def show
-    @messages = Message.all
+    @messages = Message.order(created_at: :desc)
   end
 end

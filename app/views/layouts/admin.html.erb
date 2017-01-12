@@ -6,7 +6,11 @@
     <%= action_cable_meta_tag %>
 
     <%= stylesheet_link_tag    'admin/admin', media: 'all', 'data-turbolinks-track': 'reload' %>
+
+    <!-- jQuery 2.2.3 -->
+    <script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
     <%= javascript_include_tag 'admin/admin', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'cable', 'data-turbolinks-track': 'reload' %>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
@@ -359,8 +363,6 @@
 
 <!-- REQUIRED JS SCRIPTS -->
 
-<!-- jQuery 2.2.3 -->
-<script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
 <!-- Bootstrap 3.3.6 -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <!-- AdminLTE App -->
