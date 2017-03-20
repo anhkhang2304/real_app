@@ -8,7 +8,6 @@ class RoomChannel < ApplicationCable::Channel
   end
 
   def speak(data)
-    byebug
-    # Message.create! content: data['message']
+    Message.create! content: "data['message']"
   end
 end
